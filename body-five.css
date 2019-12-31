@@ -1,0 +1,37 @@
+.body-five{
+  width:1200px;
+  height:500px;
+  /* background-color:blueviolet; */
+  margin: 20px auto;
+}
+
+.body-five .body-five-top {
+  width:1200px;
+  height:50px;
+  background-color: dimgray;
+  margin-bottom: 30px;
+}
+
+.body-five .body-five-top .body-five-top-list {
+  width:72px;
+  height:18px;
+  padding: 16px 16px;
+  /* background-color: forestgreen; */
+  float: left;
+}
+
+.body-five .body-five-list{
+  width:1200px;
+  height: 420px;
+  background-color: gold;
+}
+
+
+.body-five .body-five-list .body-five-list-item{
+  width:540px;
+  height:150px;
+  padding: 30px;
+  background-color: ghostwhite;
+  float: left;
+  border: 1px 1px 1px solid #999;
+}

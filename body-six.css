@@ -1,0 +1,30 @@
+.body-six{
+  width:1200px;
+  height:222px;
+  /* background-color:blueviolet; */
+  margin: 20px auto;
+}
+
+.body-six .body-six-all {
+  width:1200px;
+  height:132px;
+  padding:60px 0px 30px;
+  /* background-color: gold; */
+  
+}
+
+.body-six .body-six-all .body-six-all-one {
+  width:221px;
+  height:100%;
+  /* background-color: gray; */
+  float: left;
+  text-align: left;
+}
+
+.body-six .body-six-all .body-six-all-list {
+  /* background-color: hotpink; */
+  height: 109px;
+  float: left;
+  margin-left: 62px;
+  text-align: left;
+}

@@ -1,0 +1,31 @@
+
+.body-three{
+  width:1200px;
+  height:300px;
+  /* background-color:blueviolet; */
+  margin: 20px auto;
+
+}
+
+ .body-three .body-three-all {
+  width:585px;
+  height:130px;
+  /* background-color: darkturquoise; */
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+} 
+
+.body-three .body-three-all .body-three-all-img {
+  float: left;
+  margin-right: 10px;
+}
+.body-three .body-three-all .body-three-list-text {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.body-three .body-three-all .body-three-all-time {
+ 
+  margin-top: 15px;
+}

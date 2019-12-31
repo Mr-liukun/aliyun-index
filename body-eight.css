@@ -1,0 +1,32 @@
+.body-eight{
+  width:100%;
+  height:600px;
+  background-color:rgb(24, 24, 24);
+  margin-top: 100px;
+}
+
+.body-eight .body-eight-top {
+  width:1200px;
+  height:218px;
+  padding: 56px 0 0;
+  margin: 0 auto ;
+}
+
+.body-eight .body-eight-top .body-eight-top-left {
+  width:360px;
+  height:218px;
+}
+
+
+
+ .body-eight .body-eight-top .body-eight-top-right {
+  width:555px;
+  height:218px;
+  position: relative;
+  top:-218px;
+  float: right;
+}
+
+.body-eight .body-eight-top .body-eight-top-right .body-eight-top-right-top {
+  float: left;
+}

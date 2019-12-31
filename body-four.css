@@ -1,0 +1,26 @@
+.body-four{
+  width:1200px;
+  height:150px;
+  /* background-color:blueviolet; */
+  margin: 20px auto;
+}
+
+.body-four .body-four-list {
+  width:260px;
+  height:112px;
+  /* background-color: darkturquoise; */
+  float: left;
+  padding: 19px 62px;
+  border: #999 1px solid;
+}
+.body-four .body-four-list .body-four-list-table {
+  width:300px;
+  height:80px;
+  font-size: 14px;
+
+}
+
+.body-four .body-four-list .body-four-list-table tr td {
+  text-align: left;
+  width:100px;
+}

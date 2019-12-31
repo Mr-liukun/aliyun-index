@@ -1,0 +1,137 @@
+/* 头部样式 */
+
+*{
+  margin:0;
+  padding: 0;
+  text-align: center;
+}
+.head{
+  width:1200px;
+  height:150px;
+  margin: 0 auto;
+  line-height: 50px;
+}
+
+/* .body-three{
+  width:1200px;
+  height:300px;
+  background-color:blueviolet;
+  margin: 20px auto;
+  line-height: 500px;
+
+} */
+
+.footer{
+  width:1200px;
+  height:200px;
+  background-color:burlywood;
+  margin: 0 auto;
+  line-height: 100px;
+}
+
+/*  */
+.nav{
+  float:right;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.nav ul li {
+  list-style: none;
+  float:left;
+  width:60px;
+  height:40px;
+  font-size: 14px;
+  font-weight: bold;
+  color:gray;
+  line-height: 60px;     
+}
+
+.d-search {
+  width:500px;
+  height:100px;
+  float:right;
+  /* margin-top: 20px; */
+  margin-right: 20px;
+}
+
+.head-search {
+  width:380px;
+  height:32px;
+}
+
+.top-search-text {
+  margin-left: 8px;
+}
+.d-search .top-search-text ul li{
+  list-style: none;
+  float:left;
+  width:40px;
+  height:40px;
+  font-size: 14px;
+  color:gray; 
+  line-height: 80px;    
+} 
+
+.d-search .bottom-search-text{
+  /* padding-right: 50px; */
+  font-size: 10px;
+  color:gray;  
+  margin-left: 13px;
+  text-align: left; 
+  line-height: 7px;
+   
+}
+
+#search {
+  height:34px;
+  width:80px;
+}
+
+.img-index {
+  float: left;
+  position: relative;
+  top:35%;
+
+}
+
+.head-img {
+  width:120px;
+  height:30px;
+}
+
+.head-bottom-list{
+  width:900px;
+  height:40px;
+  background-color: azure;
+}
+
+ .head .head-bottom-list ul li {
+  list-style: none;
+  float:left;
+  width:100px;
+  height:30px;
+  font-size: 16px;
+  color:gray; 
+  line-height: 60px;
+}
+
+.head .right-botton-div {
+  position: relative;
+  top: -27%;
+  margin-left: 1020px;
+}
+
+.head .right-botton-div img {
+  width:180px;
+  height:50px;
+}
+
+#zhuce {
+  height:34px;
+  width:80px;
+}
+
+.clear{
+  clear: both;
+}
