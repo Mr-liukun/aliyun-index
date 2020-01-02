@@ -7,9 +7,13 @@
 }
 
 .body-seven .body-seven-list {
-  /* background-color: hotpink; */
   float: left;
   margin-left: 75px;
   padding: 0 10px 10px 10px;
+  color:#808080;
   
+}
+
+.body-seven .body-seven-list:hover {
+  color:#ff6a00;
 }

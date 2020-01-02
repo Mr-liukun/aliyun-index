@@ -1,14 +1,14 @@
 .body-five{
   width:1200px;
   height:500px;
-  /* background-color:blueviolet; */
   margin: 20px auto;
+  /* background-color: chartreuse; */
 }
 
 .body-five .body-five-top {
   width:1200px;
   height:50px;
-  background-color: dimgray;
+  /* background-color: dimgray; */
   margin-bottom: 30px;
 }
 
@@ -16,22 +16,28 @@
   width:72px;
   height:18px;
   padding: 16px 16px;
-  /* background-color: forestgreen; */
   float: left;
+  border-bottom: 2px solid #ebebef;
 }
 
 .body-five .body-five-list{
   width:1200px;
   height: 420px;
-  background-color: gold;
+  background-color: #f4f4ff;
 }
-
 
 .body-five .body-five-list .body-five-list-item{
-  width:540px;
-  height:150px;
+  width:530px;
+  height:140px;
   padding: 30px;
-  background-color: ghostwhite;
+  background-color: #f4f4ff;
   float: left;
-  border: 1px 1px 1px solid #999;
+  border: 1px solid #e4e4e4;
+  /* margin: 3px; */
 }
+
+.body-five .body-five-list .body-five-list-item:hover {
+  box-shadow: 0 0 7px #999;
+  transition: 0.7s;
+}
+

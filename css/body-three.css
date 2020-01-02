@@ -25,6 +25,10 @@
   margin-top: 5px;
 }
 
+.body-three .body-three-all .body-three-list-text strong:hover {
+  color: #ff6a00;
+}
+
 .body-three .body-three-all .body-three-all-time {
  
   margin-top: 15px;

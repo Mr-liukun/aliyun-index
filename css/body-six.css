@@ -27,4 +27,9 @@
   float: left;
   margin-left: 62px;
   text-align: left;
+  color:#808080;
+}
+
+.body-six .body-six-all .body-six-all-list:hover {
+  color:#ff6a00;
 }
