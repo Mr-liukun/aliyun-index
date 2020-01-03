@@ -1,6 +1,37 @@
 
+// function displayOne(index) {
+//   document.getElementsByClassName("body-bottom-center1")[0].setAttribute("style","display:none");
+// }
+
+// function displayOneShow(index) {
+//   document.getElementsByClassName("body-bottom-center1")[0].setAttribute("style", "display:block");
+//   document.getElementsByClassName("body-display-one")[0].setAttribute("style","display:none");
+// }
+
+function searchTopText(index) {
+  var lis = document.getElementsByClassName("nav-li");
+  lis[index].setAttribute("style","background-color:#ff6a00;color:#fff");
+  for(var i=0; i<lis.length; i++) {
+    if(i==index) {
+      continue;
+    }
+    lis[i].setAttribute("style","background-color:#fff;color:#000")
+  }
+
+  if(index == 0) {
+    document.getElementsByClassName("head-search")[0].innerHTML = "请输入"
+  }else if(index == 1){
+    document.getElementsByClassName("head-search")[0].innerHTML = "请输入您想要的域名"
+  }else if(index == 2){
+    document.getElementsByClassName("head-search")[0].innerHTML = "请输入您想要的商标"
+  }else if(index == 3){
+    document.getElementsByClassName("head-search")[0].innerHTML = "请输入公司名"
+  }
+
+  
+}
+
 function colorShow(index) {
- 
   if(index == 1) {
     document.getElementById("guonei-text").setAttribute("style","color:#fe6a00");
   }else if( index == 2) {

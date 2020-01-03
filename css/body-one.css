@@ -3,6 +3,7 @@
   height:624px;
   background-color:#f4f4f4;
   margin: 20px auto;
+  /* padding-top: 20px; */
   
 }
 
@@ -16,8 +17,9 @@
 
   margin-top: -624px;
   margin-left: 262px;
-
 }
+
+
 
 .body .body-top-right img {
   width:940px;
@@ -28,15 +30,53 @@
   width:240px;
   height: 285px;
   margin-top: -285px;
-  background-color:brown;
+  background-color:#fff;
   float:right;
 }
 
+.body .body-bottom-right .body-bottom-right-button button{
+  width: 94px;
+  height: 34px;
+}
+
+.body .body-bottom-right .body-bottom-right-button .body-bottom-right-button-change {
+  color: #fe6a00;
+  margin-left: 2px;
+  border: 1px solid #fe6a00;
+  background-color: #fff;
+}
+
+.body .body-bottom-right .body-bottom-right-button .body-bottom-right-button-change:hover{
+  color: #fff;
+  background-color: #fe6a00;
+}
+
+
 .body .body-left-all {
-  position: relative;
   width:240px;
   height:624px;
-  background-color: darkcyan;
+  background-color: #fff;
+}
+
+.body .body-left-all .body-left-all-one{
+  color:#181818;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.body .body-left-all .body-left-all-other {
+  color:#999;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+
+.body .body-left-all .body-left-all-other a:hover {
+  color:#ff6a00;
+}
+
+.body .body-left-all .body-left-all-one:hover{
+  color:#ff6a00;
 }
 
 .body .body-bottom-center1 {
@@ -44,14 +84,18 @@
   margin-top: 18px;
   width:680px;
   height: 284px;
-  background-color:brown;
 }
 
 .body .body-bottom-center1 .body-bottom-center1-list1 {
-  width:146px;
+  width:145px;
   height:204px;
-  background-color: darkkhaki;
+  background-color: #fff;
   float: left;
   padding:40px;
+  border-right: 1px solid #eee;
+  cursor: pointer;
+}
 
+.body .body-bottom-center1 .body-bottom-center1-list1 .body-bottom-center1-list1-span:hover{
+  color:#ff6a00;
 }

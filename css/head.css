@@ -7,33 +7,18 @@
 }
 .head{
   width:1200px;
-  height:150px;
+  height:140px;
   margin: 0 auto;
-  line-height: 50px;
+  /* background-color: #ff6a00; */
+  /* line-height: 32px; */
+  /* box-shadow: 0 0 5px 0 #999; */
+  /* margin-bottom: 20px; */
 }
 
-/* .body-three{
-  width:1200px;
-  height:300px;
-  background-color:blueviolet;
-  margin: 20px auto;
-  line-height: 500px;
-
-} */
-
-.footer{
-  width:1200px;
-  height:200px;
-  background-color:burlywood;
-  margin: 0 auto;
-  line-height: 100px;
-}
-
-/*  */
 .nav{
   float:right;
   margin-top: 40px;
-  margin-right: 20px;
+  margin-right: 42px;
 }
 
 .nav ul li {
@@ -42,10 +27,17 @@
   width:60px;
   height:40px;
   font-size: 14px;
-  font-weight: bold;
-  color:gray;
-  line-height: 60px;     
+  /* font-weight: ; */
+  color:#181818;
+  line-height: 40px;  
+  cursor: pointer;   
 }
+
+.nav ul li:hover {
+  color:#ff6a00;
+}
+
+
 
 .d-search {
   width:500px;
@@ -57,30 +49,52 @@
 
 .head-search {
   width:380px;
-  height:32px;
+  height:25px;
+  border: 2px #ff6a00 solid;
+  position: absolute;
+  top:40px;
+  cursor:text;
+  padding: 7px 0  0 20px;
+  outline: none; /*去掉chrome浏览器自带的点击input框出现边框情况*/
+  color: #999;
+  font-size: 14px;
 }
 
 .top-search-text {
-  margin-left: 8px;
+  margin-left: 15px;
 }
+
 .d-search .top-search-text ul li{
   list-style: none;
   float:left;
   width:40px;
-  height:40px;
-  font-size: 14px;
-  color:gray; 
-  line-height: 80px;    
+  height:20px;
+  font-size: 12px;
+  color:#000; 
+  line-height: 30px; 
+  padding:0px 5px 10px 5px ;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  position: relative;
+  left:-15px;
 } 
 
 .d-search .bottom-search-text{
-  /* padding-right: 50px; */
+
   font-size: 10px;
   color:gray;  
-  margin-left: 13px;
   text-align: left; 
-  line-height: 7px;
-   
+  line-height: 20px;
+  cursor: pointer; 
+  position: relative;
+  top:77px;
+  left:-215px;
+  width:610px;
+}
+
+.d-search .bottom-search-text span span:hover{
+  color: #ff6a00;
 }
 
 #search {
@@ -103,7 +117,7 @@
 .head-bottom-list{
   width:900px;
   height:40px;
-  background-color: azure;
+  /* background-color: azure; */
 }
 
  .head .head-bottom-list ul li {
@@ -111,14 +125,20 @@
   float:left;
   width:100px;
   height:30px;
-  font-size: 16px;
+  font-size: 14px;
   color:gray; 
-  line-height: 60px;
+  line-height: 90px;
+  cursor: pointer;
 }
+
+.head .head-bottom-list ul li:hover {
+  color:#ff6a00;
+}
+
 
 .head .right-botton-div {
   position: relative;
-  top: -27%;
+  top: -20%;
   margin-left: 1020px;
 }
 
@@ -128,10 +148,23 @@
 }
 
 #zhuce {
-  height:34px;
   width:80px;
+  height:24px;
+  padding: 5px 10px;
+  border: 1px solid #ff6a00;
+  background-color: #ff6a00;
+  color: #fff;
+  font-weight: 400;
 }
 
 .clear{
   clear: both;
+}
+
+
+.layout-1-2 {
+  background-color: #f4f4f4;
+  /* background-color:#ff6a00; */
+  height:1330px;
+  /* box-shadow: 0 0 10px 0 #999; */
 }
