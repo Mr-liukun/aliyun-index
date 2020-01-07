@@ -1,12 +1,116 @@
 
-// function displayOne(index) {
-//   document.getElementsByClassName("body-bottom-center1")[0].setAttribute("style","display:none");
-// }
+var flag = 0;
 
-// function displayOneShow(index) {
-//   document.getElementsByClassName("body-bottom-center1")[0].setAttribute("style", "display:block");
-//   document.getElementsByClassName("body-display-one")[0].setAttribute("style","display:none");
-// }
+function showTopRight(index){
+
+  flag = index;
+  var list = document.getElementsByClassName("demo-left-list");
+  var show = document.getElementById("up-shop");
+  var img = document.getElementById("imgshow");
+  for(var i=0; i<list.length; i++) {
+    if(index==0){
+      show.setAttribute("style", "display:block;");
+      img.setAttribute("src", "./imgs/show-1.jpg");
+      for(var j=0;j<list.length; j++) {
+        if(j==index) {
+          list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
+        }else{
+          list[j].setAttribute("style","background-color:#ff6a00;color:#fff");
+        }
+      }
+    }else if(index==1) {
+      show.setAttribute("style", "display:block;");
+      img.setAttribute("src", "./imgs/show-2.jpg");
+      for(var j=0;j<list.length; j++) {
+        if(j==index) {
+          list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
+        }else{
+          list[j].setAttribute("style","background-color:#ff6a00;color:#fff");
+        }
+      }
+    }else if(index == 2 ){
+      show.setAttribute("style", "display:block;");
+      img.setAttribute("src", "./imgs/show-1.jpg");
+      for(var j=0;j<list.length; j++) {
+        if(j==index) {
+          list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
+        }else{
+          list[j].setAttribute("style","background-color:#ff6a00;color:#fff");
+        }
+      }
+      continue;
+    }else if(index==3) {
+      show.setAttribute("style", "display:block;");
+      img.setAttribute("src", "./imgs/show-2.jpg");
+      for(var j=0;j<list.length; j++) {
+        if(j==index) {
+          list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
+        }else{
+          list[j].setAttribute("style","background-color:#ff6a00;color:#fff");
+        }
+      }
+    }else if(index==4) {
+      show.setAttribute("style", "display:block;");
+      img.setAttribute("src", "./imgs/show-1.jpg");
+      for(var j=0;j<list.length; j++) {
+        if(j==index) {
+          list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
+        }else{
+          list[j].setAttribute("style","background-color:#ff6a00;color:#fff");
+        }
+      }
+    }else if(index==5) {
+      show.setAttribute("style", "display:block;");
+      img.setAttribute("src", "./imgs/show-2.jpg");
+      for(var j=0;j<list.length; j++) {
+        if(j==index) {
+          list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
+        }else{
+          list[j].setAttribute("style","background-color:#ff6a00;color:#fff");
+        }
+      }
+    }else if(index==6) {
+      show.setAttribute("style", "display:block;");
+      img.setAttribute("src", "./imgs/show-1.jpg");
+      for(var j=0;j<list.length; j++) {
+        if(j==index) {
+          list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
+        }else{
+          list[j].setAttribute("style","background-color:#ff6a00;color:#fff");
+        }
+      }
+    }else if(index==7) {
+      show.setAttribute("style", "display:block;");
+      img.setAttribute("src", "./imgs/show-2.jpg");
+      for(var j=0;j<list.length; j++) {
+        if(j==index) {
+          list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
+        }else{
+          list[j].setAttribute("style","background-color:#ff6a00;color:#fff");
+        }
+      }
+    }  
+  }
+}
+
+function imgShow() {
+  var list = document.getElementsByClassName("demo-left-list");
+  list[flag].setAttribute("style", "background-color:#fff;color:#ff6a00")
+}
+
+
+
+function hideTopRight() {
+
+  var show = document.getElementById("demoshow");
+
+  show.setAttribute("style", "display:none")
+}
+
+function showqwe() {
+  document.getElementById("demoshow").setAttribute("style", "display:block");
+}
+
 
 function searchTopText(index) {
   var lis = document.getElementsByClassName("nav-li");

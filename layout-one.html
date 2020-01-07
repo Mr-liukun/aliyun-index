@@ -35,7 +35,45 @@
 </head>
 
 <body>
- 
+
+
+  <div class="demo" id="demoshow" onmouseleave="hideTopRight()">
+    <div class="demo-left">
+      <div class="demo-left-list-first" style="background-color: #fe6a00;border-bottom: 1px solid #fff;">
+      </div>
+      <div   class="demo-left-list demo-left-list-one" onmouseover="showTopRight(0)" >
+        <!-- onmouseout="changeWhite() -->
+        云计算基础
+      </div>
+      <div class="demo-left-list" onmouseover="showTopRight(1)">
+        安全
+      </div>
+      <div class="demo-left-list" onmouseover="showTopRight(2)">
+        大数据
+      </div>
+      <div class="demo-left-list" onmouseover="showTopRight(3)">
+        安全
+      </div>
+      <div class="demo-left-list" onmouseover="showTopRight(4)">
+        大数据
+      </div>
+      <div class="demo-left-list" onmouseover="showTopRight(5)">
+        安全
+      </div>
+      <div class="demo-left-list" onmouseover="showTopRight(6)">
+        大数据
+      </div>
+      <div class="demo-left-list" onmouseover="showTopRight(7)">
+        大数据
+      </div>
+    </div>
+
+    <div class="demo-right" id="up-shop">
+      <img id="imgshow" src="./imgs/show-1.jpg" onmouseover="imgShow()"/>
+    </div>
+  </div>
+
+
   <!-- 头部 -->
   <div style="height:170px;box-shadow: 0px 0px 40px 0px #b9b4b4;">
 
@@ -77,10 +115,11 @@
         </div>
       </div>
       <div class="clear"></div>
+      <!--弹出框-->
       <div class="head-bottom-list">
         <ul>
           <li>最新活动</li>
-          <li>产品分类</li>
+          <li onmouseenter="showqwe()">产品分类</li>
           <li>企业应用中心</li>
           <li>解决方案</li>
           <li>云市场</li>
@@ -90,6 +129,7 @@
           <li>了解阿里云</li>
         </ul>
       </div>
+
       <div class="clear"></div>
       <div class="right-botton-div">
         <img src="./imgs/zixun.gif" />
