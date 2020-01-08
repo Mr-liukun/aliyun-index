@@ -2,21 +2,32 @@
 var flag = 0;
 
 
+function qweasdzxc() {
+  document.getElementById("img-top-right").setAttribute("style", "display:none");
+  var list = document.getElementsByClassName("left-list");
+  for(var i=0; i<list.length; i++) {
+    list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
+  }
+}
+
 function rightShow(index) {
 
   var list = document.getElementsByClassName("left-list");
 
   if(index==0){
-    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ");
+    list[index].setAttribute("style", "box-shadow: 1px 0 7px #999;border-right:0px solid #fff");
+    document.getElementById("img-top-right").setAttribute("style","display:block");
     document.getElementById("top-right").setAttribute("src", "./imgs/right-1.jpg");
     for(var i=0; i<list.length; i++) {
       if(index==i){
         continue;
       }
+      list[i].setAttribute("style","border-right:1px solid #000");
       list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
     }
   }else if(index==1){
-    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ")
+    list[index].setAttribute("style", "box-shadow: 1px 0 7px #999;border-right:0px solid #fff");
+    document.getElementById("img-top-right").setAttribute("style","display:block");
     document.getElementById("top-right").setAttribute("src", "./imgs/right-2.jpg");
     for(var i=0; i<list.length; i++) {
       if(index==i){
@@ -25,7 +36,8 @@ function rightShow(index) {
       list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
     }
   }else if(index==2){
-    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ")
+    list[index].setAttribute("style", "box-shadow: 1px 0 7px #999;border-right:0px solid #fff");
+    document.getElementById("img-top-right").setAttribute("style","display:block");
     document.getElementById("top-right").setAttribute("src", "./imgs/right-1.jpg");
     for(var i=0; i<list.length; i++) {
       if(index==i){
@@ -34,7 +46,8 @@ function rightShow(index) {
       list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
     }
   }else if(index==3){
-    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ")
+    list[index].setAttribute("style", "box-shadow: 1px 0 7px #999;border-right:0px solid #fff");
+    document.getElementById("img-top-right").setAttribute("style","display:block");
     document.getElementById("top-right").setAttribute("src", "./imgs/right-2.jpg");
     for(var i=0; i<list.length; i++) {
       if(index==i){
@@ -43,7 +56,8 @@ function rightShow(index) {
       list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
     }
   }else if(index==4){
-    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ")
+    list[index].setAttribute("style", "box-shadow: 1px 0 7px #999;border-right:0px solid #fff");
+    document.getElementById("img-top-right").setAttribute("style","display:block");
     document.getElementById("top-right").setAttribute("src", "./imgs/right-1.jpg");
     for(var i=0; i<list.length; i++) {
       if(index==i){
@@ -52,7 +66,8 @@ function rightShow(index) {
       list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
     }
   }else if(index==5){
-    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ")
+    list[index].setAttribute("style", "box-shadow: 1px 0 7px #999;border-right:0px solid #fff");
+    document.getElementById("img-top-right").setAttribute("style","display:block");
     document.getElementById("top-right").setAttribute("src", "./imgs/right-2.jpg");
     for(var i=0; i<list.length; i++) {
       if(index==i){
@@ -61,7 +76,8 @@ function rightShow(index) {
       list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
     }
   }else if(index==6){
-    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ")
+    list[index].setAttribute("style", "box-shadow: 1px 0 7px #999;border-right:0px solid #fff");
+    document.getElementById("img-top-right").setAttribute("style","display:block;box-shadow:0 0 5px #gray");
     document.getElementById("top-right").setAttribute("src", "./imgs/right-1.jpg");
     for(var i=0; i<list.length; i++) {
       if(index==i){
