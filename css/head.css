@@ -117,6 +117,7 @@
 .head-bottom-list{
   width:900px;
   height:40px;
+  margin-top: 30px;
   /* background-color: azure; */
 }
 
@@ -125,9 +126,10 @@
   float:left;
   width:100px;
   height:30px;
+  padding-bottom: 10px;
   font-size: 14px;
   color:gray; 
-  line-height: 90px;
+  line-height: 30px;
   cursor: pointer;
 }
 
@@ -138,7 +140,7 @@
 
 .head .right-botton-div {
   position: relative;
-  top: -20%;
+  top: -45%;
   margin-left: 1020px;
 }
 
@@ -166,14 +168,14 @@
   background-color: #f4f4f4;
   /* background-color:#ff6a00; */
   height:1330px;
-  /* box-shadow: 0 0 10px 0 #999; */
+  /* box-shadow: 10px 10px 10px 20px #999; */
 }
 
 
  .demo {
   background-color: #fe6a00;
   width:1200px;
-  height:800px;
+  height:650px;
   z-index: 10;
   /* overflow: visible; */
   display:none;
@@ -224,7 +226,7 @@
 
 .demo .demo-right {
   width:970px;
-  height:800px;
+  height:650px;
   float:right;
   background-color: #fff;
 }

@@ -1,6 +1,80 @@
 
 var flag = 0;
 
+
+function rightShow(index) {
+
+  var list = document.getElementsByClassName("left-list");
+
+  if(index==0){
+    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ");
+    document.getElementById("top-right").setAttribute("src", "./imgs/right-1.jpg");
+    for(var i=0; i<list.length; i++) {
+      if(index==i){
+        continue;
+      }
+      list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
+    }
+  }else if(index==1){
+    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ")
+    document.getElementById("top-right").setAttribute("src", "./imgs/right-2.jpg");
+    for(var i=0; i<list.length; i++) {
+      if(index==i){
+        continue;
+      }
+      list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
+    }
+  }else if(index==2){
+    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ")
+    document.getElementById("top-right").setAttribute("src", "./imgs/right-1.jpg");
+    for(var i=0; i<list.length; i++) {
+      if(index==i){
+        continue;
+      }
+      list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
+    }
+  }else if(index==3){
+    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ")
+    document.getElementById("top-right").setAttribute("src", "./imgs/right-2.jpg");
+    for(var i=0; i<list.length; i++) {
+      if(index==i){
+        continue;
+      }
+      list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
+    }
+  }else if(index==4){
+    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ")
+    document.getElementById("top-right").setAttribute("src", "./imgs/right-1.jpg");
+    for(var i=0; i<list.length; i++) {
+      if(index==i){
+        continue;
+      }
+      list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
+    }
+  }else if(index==5){
+    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ")
+    document.getElementById("top-right").setAttribute("src", "./imgs/right-2.jpg");
+    for(var i=0; i<list.length; i++) {
+      if(index==i){
+        continue;
+      }
+      list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
+    }
+  }else if(index==6){
+    list[index].setAttribute("style", "box-shadow: 0 0 7px #999; ")
+    document.getElementById("top-right").setAttribute("src", "./imgs/right-1.jpg");
+    for(var i=0; i<list.length; i++) {
+      if(index==i){
+        continue;
+      }
+      list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
+    }
+  } 
+  
+  
+  
+}
+
 function showTopRight(index){
 
   flag = index;
@@ -100,15 +174,44 @@ function imgShow() {
 
 
 
+//隐藏导航
 function hideTopRight() {
+  document.getElementById("demoshow").setAttribute("style", "display:none");
+  document.getElementById("qweasd").setAttribute("style","color:#gray");
+  
+}
+//显示导航
+function showqwe(index) {
 
-  var show = document.getElementById("demoshow");
+  var list = document.getElementsByClassName("head-bottom-list-li");
+  list[index].setAttribute("style","color:#ff6a00");
 
-  show.setAttribute("style", "display:none")
+  if(index==1){
+    document.getElementById("demoshow").setAttribute("style", "display:block");
+    list[index].setAttribute("style","color:#ff6a00");
+    for(var i=0; i<list.length; i++){
+      if(i==index){
+        continue;
+      }
+      list[i].setAttribute("style","color:gray");
+    }
+  }else{
+    document.getElementById("demoshow").setAttribute("style", "display:none");
+    list[index].setAttribute("style","color:#ff6a00");
+    for(var i=0; i<list.length; i++){
+      if(i==index){
+        continue;
+      }
+      list[i].setAttribute("style","color:gray");
+    }
+
+  }
+
 }
 
-function showqwe() {
-  document.getElementById("demoshow").setAttribute("style", "display:block");
+function blist() {
+  document.getElementById("demoshow").setAttribute("style", "display:none");
+  document.getElementById("qweasd").setAttribute("style","color:gray");
 }
 
 

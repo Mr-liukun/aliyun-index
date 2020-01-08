@@ -99,3 +99,19 @@
 .body .body-bottom-center1 .body-bottom-center1-list1 .body-bottom-center1-list1-span:hover{
   color:#ff6a00;
 }
+
+.body-left-all .top-right {
+  background-color: #fff;
+  width:750px;
+  height:625px;
+  z-index: 10;
+  /* overflow: visible; */
+  /* display:none; */
+  position: absolute;
+  top:170px;
+  left:592px;
+}
+
+.body-left-all .left-list {
+  margin-top: 2px;
+}
