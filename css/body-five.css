@@ -18,6 +18,7 @@
   padding: 16px 16px;
   float: left;
   border-bottom: 2px solid #ebebef;
+  cursor: pointer;
 }
 
 .body-five .body-five-list{

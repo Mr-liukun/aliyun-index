@@ -31,6 +31,7 @@
 .body-four .body-four-list .body-four-list-table tr td {
   text-align: left;
   width:100px;
+  cursor: pointer;
 }
 
 .body-four .body-four-list .body-four-list-table tr td:hover {

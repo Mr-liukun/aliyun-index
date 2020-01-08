@@ -56,6 +56,7 @@
   width:240px;
   height:624px;
   background-color: #fff;
+  /* background-color: #ff6a00; */
 }
 
 .body .body-left-all .body-left-all-one{
@@ -113,6 +114,13 @@
 }
 
 .body-left-all .left-list {
+  margin-top: 2px;
+  border-right: 3px solid #f4f4f4;
+  /* border-right: 3px solid #ff6a00; */
+  color:rgb(216, 213, 213)
+}
+
+#quanbu {
   margin-top: 2px;
   border-right: 3px solid #f4f4f4;
 }

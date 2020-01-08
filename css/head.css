@@ -142,6 +142,7 @@
   position: relative;
   top: -145%;
   margin-left: 1020px;
+  cursor: pointer;
 }
 
 .head .right-botton-div img {
@@ -195,12 +196,13 @@
  }
 
  .demo .demo-left .demo-left-list {
-  width:190px;
+  width:170px;
   height:30px;
-  padding: 20px 20px ;
-  text-align: center;
+  padding: 20px 30px ;
+  text-align: left;
   color:#fff;
   border-bottom: 1px #fff solid;
+  line-height: 20px;
   /* border: 1px solid #f4f4f4; */
 }
 
@@ -214,7 +216,7 @@
   width:190px;
   height:30px;
   padding: 20px 20px ;
-  text-align: center;
+  text-align: left;
   color:#ff6a00;
 }
 

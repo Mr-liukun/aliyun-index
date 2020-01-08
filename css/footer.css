@@ -36,6 +36,7 @@
   list-style-type: none;
   text-align: left;
   margin-top: 5px;
+  cursor: pointer;
   
 }
 .footer .footer-all .footer-all-top .footer-all-top-right  ul li:hover {
@@ -59,6 +60,7 @@
   text-decoration: none;
   transition: color .3s;
   text-align: left;
+  cursor: pointer;
 }
 
 .footer .footer-all .footer-all-top .footer-all-top-left table tr td:hover {
@@ -80,6 +82,7 @@
   width:120px;
   text-align: left;
   color:#73777a;
+  cursor: pointer;
 }
 
 .footer .footer-all .footer-all-center table tr td:hover{
@@ -92,6 +95,10 @@
   text-align: left;
   margin-top: 10px;
   color:#9b9ea0;
+}
+
+.footer .footer-all .footer-all-bottom .footer-all-bottom-top table tr td{
+  cursor: pointer;
 }
 
 .footer .footer-all .footer-all-bottom .footer-all-bottom-top table tr td:hover {
@@ -109,6 +116,7 @@
   color: #73777a;
   text-decoration: none;
   letter-spacing: .5px;
+  cursor: pointer;
 }
 
 .footer .footer-all .footer-all-bottom .footer-all-bottom-center table tr td:hover {

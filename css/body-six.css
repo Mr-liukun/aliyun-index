@@ -19,6 +19,7 @@
   /* background-color: gray; */
   float: left;
   text-align: left;
+  cursor: pointer;
 }
 
 .body-six .body-six-all .body-six-all-list {
@@ -28,6 +29,7 @@
   margin-left: 62px;
   text-align: left;
   color:#808080;
+  cursor: pointer;
 }
 
 .body-six .body-six-all .body-six-all-list:hover {
