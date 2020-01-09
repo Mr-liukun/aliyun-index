@@ -467,3 +467,11 @@ function gomove(index) {
   obj[index - 1].setAttribute("style", "display:none;");
   document.getElementsByClassName("dudong")[index - 1].setAttribute("style", "display:block;text-align: left;margin-left: 20px;")
 }
+
+function oneColorChange(index) {
+  document.getElementsByClassName("body-bottom-center1-list1-span")[index].setAttribute("style","font-size: 18px;color:#fe6a00");
+}
+
+function oneColorNone(index){
+  document.getElementsByClassName("body-bottom-center1-list1-span")[index].setAttribute("style","font-size: 18px;color:#000");
+}

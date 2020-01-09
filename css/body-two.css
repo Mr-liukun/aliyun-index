@@ -30,6 +30,7 @@
   margin-top: 32px;
   text-decoration: none;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 .body-two .body-two-left-all .body-two-left-all-button:hover {

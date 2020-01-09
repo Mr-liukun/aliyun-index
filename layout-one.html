@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>css测试</title>
+  <title>阿里云-上云就上阿里云</title>
+  <link rel="icon" href="./imgs/aliyun-title.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="./css/head.css" />
   <link rel="stylesheet" type="text/css" href="./css/body-one.css" />
   <link rel="stylesheet" type="text/css" href="./css/body-two.css" />
@@ -16,18 +17,7 @@
   <link rel="stylesheet" type="text/css" href="./css/body-nine.css" />
   <link rel="stylesheet" type="text/css" href="./css/footer.css" />
   <link rel="stylesheet" type="text/css" href="./css/lunbo.css" />
-
   <script src="./js/index.js"></script>
-
-
-  <!-- <script src="https://cdn.bootcss.com/react/16.2.0/umd/react.production.min.js"></script>
-  <script src="https://cdn.bootcss.com/react-dom/16.2.0/umd/react-dom.production.min.js"></script>
-  <script src="https://cdn.bootcss.com/babel-standalone/6.26.0/babel.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/3.0.2/antd.js"></script>  
-  <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/antd/3.0.2/antd.css" /> -->
-
-
   <style>
     .body-two-right-list {
       text-align: left;
@@ -143,8 +133,6 @@
       </div>
     </div>
 
-    <!-- <div class="clear"></div> -->
-
     <!-- body -->
     <div class="layout-1-2">
       <div class="body">
@@ -222,7 +210,8 @@
           <div class="clear"></div>
           <div class="body-top-right">
             <img id="lunbo" src="./imgs/lun-one.jpg">
-            <div class="lunbo-all"><!-- onmouseover="changecolor(2)" onmouseout="changegohomecolor(2)" -->
+            <div class="lunbo-all">
+              <!-- onmouseover="changecolor(2)" onmouseout="changegohomecolor(2)" -->
               <div onclick="lunboclick(0)" class="lunbo-item" style="background-color: #ff6a00;"></div>
               <div onclick="lunboclick(1)" class="lunbo-item"></div>
               <div onclick="lunboclick(2)" class="lunbo-item"></div>
@@ -233,24 +222,22 @@
           <!-- body-one中中间下面的区域 -->
           <div class="body-bottom-center1">
 
-            <div class="body-bottom-center1-list1">
+            <div class="body-bottom-center1-list1" onmouseover="oneColorChange(0)" onmouseout="oneColorNone(0)">
               <span class="body-bottom-center1-list1-span" style="font-size: 18px;">企业实例低至1折</span></br></br>
               <span style="font-size: 14px;color: #999;">独享实例，无资源争抢 2核8G6M低至1.6元/天</span>
               <div style="margin-top: 20px;"><img src="./imgs/body-one-center-list1.png" width="70px" height="70px" />
               </div>
             </div>
 
-            <div class="body-bottom-center1-list1">
-              <span class="body-bottom-center1-list1-span" style="font-size: 18px;">商标自助注册</span
-                style="font-size: 18px;"></br></br>
+            <div class="body-bottom-center1-list1" onmouseover="oneColorChange(1)" onmouseout="oneColorNone(1)">
+              <span class="body-bottom-center1-list1-span" style="font-size: 18px;">商标自助注册</span></br></br>
               <span style="font-size: 14px;color: #999;">高效极速递交商标局，全流程线上进度一目了然</span>
               <div style="margin-top: 20px;"><img src="./imgs/body-one-center-list2.png" width="70px" height="70px" />
               </div>
             </div>
 
-            <div class="body-bottom-center1-list1">
-              <span class="body-bottom-center1-list1-span" style="font-size: 18px;">重磅发布</span
-                class="body-bottom-center1-list1-span"></br></br>
+            <div class="body-bottom-center1-list1" onmouseover="oneColorChange(2)" onmouseout="oneColorNone(2)">
+              <span class="body-bottom-center1-list1-span" style="font-size: 18px;">重磅发布</span></br></br>
               <span style="font-size: 14px;color: #999;">SCU灵活支付资源包，让存储购买不再糟心</span>
               <div style="margin-top: 20px;"><img src="./imgs/body-one-center-list3.png" width="70px" height="70px" />
               </div>
@@ -263,12 +250,14 @@
             <img src="./imgs/body-one-bottom-right.png" width="40px" height="40px" style="margin-top: 40px;" />
             <div style="font-size: 14px;">Hi！欢迎来到阿里云</div>
             <div class="body-bottom-right-button" style="margin-top: 20px;">
-              <button style="border: #fe6a00 1px solid;background-color: #ff6a00;color:#fff">登录</button>
-              <button class="body-bottom-right-button-change">注册</button>
+              <button
+                style="border: #fe6a00 1px solid;background-color: #ff6a00;color:#fff;cursor: pointer;">登录</button>
+              <button class="body-bottom-right-button-change" style="cursor: pointer">注册</button>
             </div>
             <div style="font-size: 14px;color: #ff6a00;margin-top: 60px;margin-left: -12px;border-top: 1px solid #eee;">
               </br>
-              <a>全民云计算 </a><span style="color: #999;">|</span><a> 免费试用</a>
+              <a style="cursor: pointer;">全民云计算 </a><span style="color: #999;">|</span><a style="cursor: pointer;">
+                免费试用</a>
             </div>
           </div>
 
@@ -721,7 +710,7 @@
         </div>
 
         <div class="body-eight-top-right" style="text-align: left;">
-          
+
           <div id="guonei" class="body-eight-top-right-top"
             style="width:100px;border-bottom: solid 2px #fe6a00;color: #fe6a00;">
             <a id="guonei-text" onclick="dataShow(1)" onmouseover="colorShow(1)" onmouseout="colorNone(1)">国内数据中心</a>
@@ -732,11 +721,12 @@
 
           <div id="quanqiu" class="body-eight-top-right-top"
             style="width:100px;border-bottom: solid 2px hsla(0,0%,100%,.3);">
-            <a id="quanqiu-text" onclick="dataShow(2)" onmouseover="colorShow(2)" onmouseout="colorNone(2)" style="color: #fff;">全球数据中心</a>
+            <a id="quanqiu-text" onclick="dataShow(2)" onmouseover="colorShow(2)" onmouseout="colorNone(2)"
+              style="color: #fff;">全球数据中心</a>
           </div>
           <div class="body-eight-top-right-top" style="width:275px;border-bottom: solid 2px hsla(0,0%,100%,.3);">&nbsp;
           </div>
-          
+
           <img id="data-show" src="./imgs/guonei.jpg" style="width: 555px;height: 217px;" />
         </div>
       </div>
@@ -970,12 +960,7 @@
         </div>
       </div>
     </div>
-
     <div style="margin-top: -264px;border-bottom: solid rgb(24, 24, 24) 1px;">
-
     </div>
-
 </body>
-
-
 </html>
