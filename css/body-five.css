@@ -35,7 +35,9 @@
 }
 
 .body-five .body-five-list .body-five-list-item:hover {
-  box-shadow: 0 0 7px #999;
+  box-shadow: 0 0 4px #999;
   transition: 0.7s;
+  position: relative;
+  z-index:1;
 }
 
