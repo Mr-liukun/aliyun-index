@@ -1,16 +1,14 @@
 var qwe = 0;
 var timer = null;
-
 var asd3 = 0;
+var lun=-1;
+var flag = 0;
+
+//轮播图片集合
+var imgs = ['./imgs/lun-one.jpg','./imgs/lun-two.jpg', './imgs/lun-three.jpg','./imgs/lun-four.jpg'];
 window.onload=function(){
-
-  qwe = 1;
-  
+  qwe = 1; 
   setTime();
-  
- 
-
-
 }
 
 function setTime(){
@@ -18,11 +16,6 @@ function setTime(){
 
 
 }
-
-
-var lun=-1;
-var imgs = ['./imgs/lun-one.jpg','./imgs/lun-two.jpg', './imgs/lun-three.jpg','./imgs/lun-four.jpg'];
-
 
 function lunbo() {
   if(lun >=3){
@@ -33,7 +26,6 @@ function lunbo() {
     qwe=0;
   }
   lun++;
-  console.log("lun:", lun);
   document.getElementById("lunbo").setAttribute("src",imgs[lun]);
   var list = document.getElementsByClassName("lunbo-item");
   list[lun].setAttribute("style","background-color:#ff6a00");
@@ -61,31 +53,21 @@ function lunboclick(index) {
       list[i].setAttribute("style","background-color:#ceac86");
     }
   }
-  // if(qwe==1 && index==3){
-  //   lun = index-2;
-  //   asd3=1;
-  // }else if(qwe==1 && index==2){
-  //   lun = index-1;
-  // }else{
-  //   lun = index;
-  // }
   lun = index;
   
   clearInterval(timer);
   setTime();
 }
 
-// function changecolor(index) {
-//   document.getElementsByClassName("lunbo-item")[index].setAttribute("style","background-color:#ff6a00");
-// }
+function lunboColorqwe(index){
+  document.getElementsByClassName("lunbo-item")[index].setAttribute("style","background-color:#ff6a00");
+}
 
-// function changegohomecolor(index) {
-//   document.getElementsByClassName("lunbo-item")[index].setAttribute("style","background-color:#ceac86");
-// }
-
-
-
-var flag = 0;
+function lunboColorasd(index){
+  if(index != lun){
+    document.getElementsByClassName("lunbo-item")[index].setAttribute("style","background-color:#ceac86");
+  }
+}
 
 function quanbu() {
   document.getElementById("quanbu").setAttribute("style","font-size: 14px;padding-top: 10px;color:#fff;height:31px;background-color:#ff6a00; cursor: pointer;");
@@ -138,7 +120,6 @@ function rightShow(index) {
       if(index==i){
         continue;
       }
-      // list[i].setAttribute("style","border-right:1px solid #000");
       list[i].setAttribute("style","box-shadow: 0 0 0 #999");
     }
   }else if(index==1){
@@ -201,10 +182,7 @@ function rightShow(index) {
       }
       list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
     }
-  } 
-  
-  
-  
+  }   
 }
 
 function showTopRight(index){
@@ -314,7 +292,6 @@ function hideTopRight() {
 }
 //显示导航
 function showqwe(index) {
-
   var list = document.getElementsByClassName("head-bottom-list-li");
   list[index].setAttribute("style","color:#ff6a00");
 
@@ -336,9 +313,7 @@ function showqwe(index) {
       }
       list[i].setAttribute("style","color:gray");
     }
-
   }
-
 }
 
 function blist() {

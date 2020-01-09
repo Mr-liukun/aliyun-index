@@ -20,9 +20,7 @@
   border-bottom: solid #4b5054 1px;
 }
 
-
 .footer .footer-all .footer-all-top .footer-all-top-right {
-
   width:169px;
   height:100%;
   background-color: rgb(24, 24, 24);
@@ -39,6 +37,7 @@
   cursor: pointer;
   
 }
+
 .footer .footer-all .footer-all-top .footer-all-top-right  ul li:hover {
   color: #ff6a00;
 }
@@ -67,7 +66,6 @@
   color: #ff6a00;
 }
 
-
 .footer .footer-all .footer-all-center {
   width:1200px;
   height:106px;
@@ -88,7 +86,6 @@
 .footer .footer-all .footer-all-center table tr td:hover{
   color: #ff6a00;
 }
-
 
 .footer .footer-all .footer-all-bottom .footer-all-bottom-top{
   line-height: 20px;

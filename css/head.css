@@ -9,10 +9,6 @@
   width:1200px;
   height:140px;
   margin: 0 auto;
-  /* background-color: #ff6a00; */
-  /* line-height: 32px; */
-  /* box-shadow: 0 0 5px 0 #999; */
-  /* margin-bottom: 20px; */
 }
 
 .nav{
@@ -27,7 +23,6 @@
   width:60px;
   height:40px;
   font-size: 14px;
-  /* font-weight: ; */
   color:#181818;
   line-height: 40px;  
   cursor: pointer;   
@@ -37,13 +32,10 @@
   color:#ff6a00;
 }
 
-
-
 .d-search {
   width:500px;
   height:100px;
   float:right;
-  /* margin-top: 20px; */
   margin-right: 20px;
 }
 
@@ -81,7 +73,6 @@
 } 
 
 .d-search .bottom-search-text{
-
   font-size: 10px;
   color:gray;  
   text-align: left; 
@@ -118,10 +109,9 @@
   width:900px;
   height:40px;
   margin-top: 30px;
-  /* background-color: azure; */
 }
 
- .head .head-bottom-list ul li {
+.head .head-bottom-list ul li {
   list-style: none;
   float:left;
   width:100px;
@@ -167,35 +157,28 @@
 
 .layout-1-2 {
   background-color: #f4f4f4;
-  /* background-color:#ff6a00; */
   height:1330px;
-  /* box-shadow: 10px 10px 10px 20px #999; */
 }
 
 
- .demo {
+.demo {
   background-color: #fe6a00;
   width:1200px;
   height:650px;
   z-index: 10;
-  /* overflow: visible; */
   display:none;
   position: absolute;
   top:170px;
   left:352px;
  }
 
- /* .demo:hover {
-   display: block;
- } */
-
- .demo .demo-left {
+.demo .demo-left {
    width:230px;
    height:140px;
    float: left;
  }
 
- .demo .demo-left .demo-left-list {
+.demo .demo-left .demo-left-list {
   width:170px;
   height:30px;
   padding: 20px 30px ;
@@ -203,7 +186,6 @@
   color:#fff;
   border-bottom: 1px #fff solid;
   line-height: 20px;
-  /* border: 1px solid #f4f4f4; */
 }
 
 .demo .demo-left .demo-left-list-first {
@@ -232,7 +214,3 @@
   float:right;
   background-color: #fff;
 }
-
-/* #imgshow {
-  width:970px;
-} */
