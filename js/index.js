@@ -400,7 +400,6 @@ function huan(index) {
       imgs[i].setAttribute("src", "./imgs/one-"+i+".jpg");
     }
   }else if(index==1){
-   
     for(var i=0; i<imgs.length; i++) {
       imgs[i].setAttribute("src", "./imgs/two-"+i+".jpg");
     }
