@@ -1,3 +1,89 @@
+var qwe = 0;
+var timer = null;
+
+var asd3 = 0;
+window.onload=function(){
+
+  qwe = 1;
+  
+  setTime();
+  
+ 
+
+
+}
+
+function setTime(){
+  timer = window.setInterval("lunbo()",5000);
+
+
+}
+
+
+var lun=-1;
+var imgs = ['./imgs/lun-one.jpg','./imgs/lun-two.jpg', './imgs/lun-three.jpg','./imgs/lun-four.jpg'];
+
+
+function lunbo() {
+  if(lun >=3){
+    lun=-1;
+  }
+  if(qwe==1){
+    lun++;
+    qwe=0;
+  }
+  lun++;
+  console.log("lun:", lun);
+  document.getElementById("lunbo").setAttribute("src",imgs[lun]);
+  var list = document.getElementsByClassName("lunbo-item");
+  list[lun].setAttribute("style","background-color:#ff6a00");
+  for(var i=0; i<list.length; i++) {
+    if(i==lun){
+      continue;
+    }
+    list[i].setAttribute("style","background-color:#ceac86");
+  }
+  if(lun>=3) {
+    lun=-1;
+  }
+
+}
+
+function lunboclick(index) {
+  qwe=0;
+  document.getElementById("lunbo").setAttribute("src",imgs[index]);
+  var list = document.getElementsByClassName("lunbo-item");
+  
+  for(var i = 0; i<list.length; i++){
+    if(i==index){
+      list[i].setAttribute("style","background-color:#ff6a00");
+    }else{
+      list[i].setAttribute("style","background-color:#ceac86");
+    }
+  }
+  // if(qwe==1 && index==3){
+  //   lun = index-2;
+  //   asd3=1;
+  // }else if(qwe==1 && index==2){
+  //   lun = index-1;
+  // }else{
+  //   lun = index;
+  // }
+  lun = index;
+  
+  clearInterval(timer);
+  setTime();
+}
+
+// function changecolor(index) {
+//   document.getElementsByClassName("lunbo-item")[index].setAttribute("style","background-color:#ff6a00");
+// }
+
+// function changegohomecolor(index) {
+//   document.getElementsByClassName("lunbo-item")[index].setAttribute("style","background-color:#ceac86");
+// }
+
+
 
 var flag = 0;
 

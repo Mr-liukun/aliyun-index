@@ -1,0 +1,27 @@
+
+.body .body-2 .body-top-right .lunbo-all{
+  width:160px;
+  height:10px;
+  /* background-color: black; */
+  position: absolute;
+  top:450px;
+  left:645px;
+  z-index: 5;
+}
+
+.body .body-2 .body-top-right .lunbo-all .lunbo-item{
+
+  float: left;
+  background-color: #ceac86;
+  width:30px;
+  height:5px;
+  margin:0 5px;
+  cursor: pointer;
+}
+
+/* .body .body-2 .body-top-right .lunbo-all .lunbo-item:hover{
+
+ 
+  background-color: #ff6a00;
+ 
+} */

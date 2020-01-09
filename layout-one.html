@@ -15,6 +15,8 @@
   <link rel="stylesheet" type="text/css" href="./css/body-eight.css" />
   <link rel="stylesheet" type="text/css" href="./css/body-nine.css" />
   <link rel="stylesheet" type="text/css" href="./css/footer.css" />
+  <link rel="stylesheet" type="text/css" href="./css/lunbo.css" />
+
   <script src="./js/index.js"></script>
 
 
@@ -117,7 +119,7 @@
               物联网
             </div>
             <div class="demo-left-list" onmouseover="showTopRight(5)">
-             Developer Services</br>
+              Developer Services</br>
               开发与运维
             </div>
             <div class="demo-left-list" onmouseover="showTopRight(6)">
@@ -150,8 +152,8 @@
           <div class="clear"></div>
           <!-- body-one中左边的区域 -->
           <div class="body-left-all" onmouseleave="qweasdzxc()">
-            <span
-             id="qweasdyy" style="display: block;border-right: 3px solid #f4f4f4;padding:5px 0;font-size: 15px;letter-spacing: 1px;height:20px;background-color: #ff6a00;color: #fff;">精选爆款</span>
+            <span id="qweasdyy"
+              style="display: block;border-right: 3px solid #f4f4f4;padding:5px 0;font-size: 15px;letter-spacing: 1px;height:20px;background-color: #ff6a00;color: #fff;">精选爆款</span>
             <div class="left-list" onmouseover="rightShow(0)">
               <span class="body-left-all-one"
                 style="display: block;text-align: left;padding: 20px 10px 10px 26px;">弹性计算></span>
@@ -208,17 +210,24 @@
                 <span style="color:rgb(232, 232, 241)">|</span><a>智能语音交互</a></span>
             </div>
 
-            <div class="left-list1" id="quanbu" onmouseover="quanbu()" onmouseout="quanbuzou()" style="font-size: 14px;padding-top: 10px;color:#ff6a00;height:31px">查看全部</div>
-           
+            <div class="left-list1" id="quanbu" onmouseover="quanbu()" onmouseout="quanbuzou()"
+              style="font-size: 14px;padding-top: 10px;color:#ff6a00;height:31px">查看全部</div>
+
             <div class="top-right" id="img-top-right" style="display: none;">
-              <img id="top-right" src="" style="margin-left:-54px;"/>
+              <img id="top-right" src="" style="margin-left:-54px;" />
             </div>
 
           </div>
           <!-- body-one中右上角的图片区域 -->
           <div class="clear"></div>
           <div class="body-top-right">
-            <img src="./imgs/body-one-big.jpg">
+            <img id="lunbo" src="./imgs/lun-one.jpg">
+            <div class="lunbo-all"><!-- onmouseover="changecolor(2)" onmouseout="changegohomecolor(2)" -->
+              <div onclick="lunboclick(0)" class="lunbo-item" style="background-color: #ff6a00;"></div>
+              <div onclick="lunboclick(1)" class="lunbo-item"></div>
+              <div onclick="lunboclick(2)" class="lunbo-item"></div>
+              <div onclick="lunboclick(3)" class="lunbo-item"></div>
+            </div>
           </div>
           <div class="clear"></div>
           <!-- body-one中中间下面的区域 -->
@@ -511,7 +520,8 @@
           <img src="./imgs/body-three-3.jpg" width="220px" height="130px" />
         </div>
         <div class="body-three-list-text">
-          <strong style="font-size: 16px;" class="strong-color">【IoT】详解物联网日益普及的原因</strong style="font-size: 16px;"></br></br>
+          <strong style="font-size: 16px;" class="strong-color">【IoT】详解物联网日益普及的原因</strong
+            style="font-size: 16px;"></br></br>
           物联网正以惊人的速度发展。那么，这种空前增长和普及背后的原因是什么？
         </div>
         <span style="display:block; margin-top: 15px;text-align: left;font-size: 14px;">2019-12-31</span>
@@ -521,7 +531,8 @@
           <img src="./imgs/body-three-4.jpg" width="220px" height="130px" />
         </div>
         <div class="body-three-list-text">
-          <strong style="font-size: 16px;" class="strong-color">【中间件】使用插件降低上传文件部署的复杂度</strong style="font-size: 16px;"></br></br>
+          <strong style="font-size: 16px;" class="strong-color">【中间件】使用插件降低上传文件部署的复杂度</strong
+            style="font-size: 16px;"></br></br>
           这里描述我们实际服务部署的时候频繁发生的两个常用场景。
         </div>
         <span style="display:block; margin-top: 15px;text-align: left;font-size: 14px;">2019-12-31</span>
