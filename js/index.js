@@ -370,24 +370,27 @@ function searchTopText(index) {
   
 }
 
+var eightColorImg = 1; 
+
 function colorShow(index) {
-  if(index == 1) {
+  if(index == 1 && index != eightColorImg) {
     document.getElementById("guonei-text").setAttribute("style","color:#fe6a00");
-  }else if( index == 2) {
+  }else if( index == 2 && index != eightColorImg) {
     document.getElementById("quanqiu-text").setAttribute("style","color:#fe6a00");
   }
 }
 
 function colorNone(index) {
-  if(index == 1) {
+  if(index == 1 && eightColorImg == 2) {
     document.getElementById("guonei-text").setAttribute("style","color:#fff");
-  }else if( index == 2) {
+  }else if( index == 2 && eightColorImg == 1) {
     document.getElementById("quanqiu-text").setAttribute("style","color:#fff");
   }
 
 }
 
 function dataShow(index) {
+  eightColorImg = index;
   var img = document.getElementById("data-show");
   if(index == 2) {
     img.setAttribute("src", "./imgs/quanqiu.jpg");

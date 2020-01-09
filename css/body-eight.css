@@ -28,5 +28,6 @@
 }
 
 .body-eight .body-eight-top .body-eight-top-right .body-eight-top-right-top {
+  cursor: pointer;
   float: left;
 }
