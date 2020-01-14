@@ -449,3 +449,13 @@ function oneColorChange(index) {
 function oneColorNone(index){
   document.getElementsByClassName("body-bottom-center1-list1-span")[index].setAttribute("style","font-size: 18px;color:#000");
 }
+
+function searchqwe() {
+  searchT = document.getElementById("seatch-text").innerHTML;
+  document.getElementById("seatch-text").innerHTML = "";
+}
+
+var searchT = "请输入";
+function searchblur() {
+  document.getElementById("seatch-text").innerHTML = searchT;
+}
