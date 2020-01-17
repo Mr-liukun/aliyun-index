@@ -96,7 +96,10 @@ function aszx(index) {
 }
 
 function qweasdzxc() {
-  document.getElementById("img-top-right").setAttribute("style", "display:none");
+  document.getElementsByClassName("top-right")[0].setAttribute("style", "display:none");
+  document.getElementsByClassName("top-right")[1].setAttribute("style", "display:none");
+  document.getElementsByClassName("top-right")[2].setAttribute("style", "display:none");
+
   var list = document.getElementsByClassName("left-list");
   for(var i=0; i<list.length; i++) {
     list[i].setAttribute("style", "box-shadow: 0 0 0 #999");
@@ -112,8 +115,9 @@ function rightShow(index) {
 
   if(index==0){
     list[index].setAttribute("style", "box-shadow: 1px 0 20px rgb(216, 213, 213);border-right:0px solid #fff");
-    document.getElementById("img-top-right").setAttribute("style","display:block");
-    document.getElementById("top-right").setAttribute("src", "./imgs/right-1.jpg");
+    document.getElementsByClassName("top-right")[0].setAttribute("style", "display:block");
+    document.getElementsByClassName("top-right")[1].setAttribute("style", "display:none");
+    document.getElementsByClassName("top-right")[2].setAttribute("style", "display:none");
     for(var i=0; i<list.length; i++) {
       if(index==i){
         continue;
@@ -122,8 +126,9 @@ function rightShow(index) {
     }
   }else if(index==1){
     list[index].setAttribute("style", "box-shadow: 1px 0 20px rgb(216, 213, 213);border-right:0px solid #fff");
-    document.getElementById("img-top-right").setAttribute("style","display:block");
-    document.getElementById("top-right").setAttribute("src", "./imgs/right-2.jpg");
+    document.getElementsByClassName("top-right")[1].setAttribute("style", "display:block");
+    document.getElementsByClassName("top-right")[0].setAttribute("style", "display:none");
+    document.getElementsByClassName("top-right")[2].setAttribute("style", "display:none");
     for(var i=0; i<list.length; i++) {
       if(index==i){
         continue;
@@ -132,8 +137,9 @@ function rightShow(index) {
     }
   }else if(index==2){
     list[index].setAttribute("style", "box-shadow: 1px 0 20px rgb(216, 213, 213);border-right:0px solid #fff");
-    document.getElementById("img-top-right").setAttribute("style","display:block");
-    document.getElementById("top-right").setAttribute("src", "./imgs/right-1.jpg");
+    document.getElementsByClassName("top-right")[2].setAttribute("style", "display:block");
+    document.getElementsByClassName("top-right")[0].setAttribute("style", "display:none");
+    document.getElementsByClassName("top-right")[1].setAttribute("style", "display:none");
     for(var i=0; i<list.length; i++) {
       if(index==i){
         continue;
@@ -142,8 +148,9 @@ function rightShow(index) {
     }
   }else if(index==3){
     list[index].setAttribute("style", "box-shadow: 1px 0 20px rgb(216, 213, 213);border-right:0px solid #fff");
-    document.getElementById("img-top-right").setAttribute("style","display:block");
-    document.getElementById("top-right").setAttribute("src", "./imgs/right-2.jpg");
+    document.getElementsByClassName("top-right")[0].setAttribute("style", "display:block");
+    document.getElementsByClassName("top-right")[1].setAttribute("style", "display:none");
+    document.getElementsByClassName("top-right")[2].setAttribute("style", "display:none");
     for(var i=0; i<list.length; i++) {
       if(index==i){
         continue;
@@ -152,8 +159,9 @@ function rightShow(index) {
     }
   }else if(index==4){
     list[index].setAttribute("style", "box-shadow: 1px 0 20px rgb(216, 213, 213);border-right:0px solid #fff");
-    document.getElementById("img-top-right").setAttribute("style","display:block");
-    document.getElementById("top-right").setAttribute("src", "./imgs/right-1.jpg");
+    document.getElementsByClassName("top-right")[1].setAttribute("style", "display:block");
+    document.getElementsByClassName("top-right")[0].setAttribute("style", "display:none");
+    document.getElementsByClassName("top-right")[2].setAttribute("style", "display:none");
     for(var i=0; i<list.length; i++) {
       if(index==i){
         continue;
@@ -162,8 +170,9 @@ function rightShow(index) {
     }
   }else if(index==5){
     list[index].setAttribute("style", "box-shadow: 1px 0 20px rgb(216, 213, 213);border-right:0px solid #fff");
-    document.getElementById("img-top-right").setAttribute("style","display:block");
-    document.getElementById("top-right").setAttribute("src", "./imgs/right-2.jpg");
+    document.getElementsByClassName("top-right")[2].setAttribute("style", "display:block");
+    document.getElementsByClassName("top-right")[0].setAttribute("style", "display:none");
+    document.getElementsByClassName("top-right")[1].setAttribute("style", "display:none");
     for(var i=0; i<list.length; i++) {
       if(index==i){
         continue;
@@ -172,8 +181,9 @@ function rightShow(index) {
     }
   }else if(index==6){
     list[index].setAttribute("style", "box-shadow: 1px 0 20px rgb(216, 213, 213);border-right:0px solid #fff");
-    document.getElementById("img-top-right").setAttribute("style","display:block;box-shadow:0 0 5px #gray");
-    document.getElementById("top-right").setAttribute("src", "./imgs/right-1.jpg");
+    document.getElementsByClassName("top-right")[0].setAttribute("style", "display:block");
+    document.getElementsByClassName("top-right")[1].setAttribute("style", "display:none");
+    document.getElementsByClassName("top-right")[2].setAttribute("style", "display:none");
     for(var i=0; i<list.length; i++) {
       if(index==i){
         continue;
