@@ -197,12 +197,10 @@ function showTopRight(index){
 
   flag = index;
   var list = document.getElementsByClassName("demo-left-list");
-  var show = document.getElementById("up-shop");
-  var img = document.getElementById("imgshow");
   for(var i=0; i<list.length; i++) {
     if(index==0){
-      show.setAttribute("style", "display:block;");
-      img.setAttribute("src", "./imgs/show-1.jpg");
+      document.getElementsByClassName("demo-right")[0].setAttribute("style","display:block");
+      document.getElementsByClassName("demo-right")[1].setAttribute("style","display:none");
       for(var j=0;j<list.length; j++) {
         if(j==index) {
           list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
@@ -211,8 +209,8 @@ function showTopRight(index){
         }
       }
     }else if(index==1) {
-      show.setAttribute("style", "display:block;");
-      img.setAttribute("src", "./imgs/show-2.jpg");
+      document.getElementsByClassName("demo-right")[1].setAttribute("style","display:block");
+      document.getElementsByClassName("demo-right")[0].setAttribute("style","display:none");
       for(var j=0;j<list.length; j++) {
         if(j==index) {
           list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
@@ -221,8 +219,8 @@ function showTopRight(index){
         }
       }
     }else if(index == 2 ){
-      show.setAttribute("style", "display:block;");
-      img.setAttribute("src", "./imgs/show-1.jpg");
+      document.getElementsByClassName("demo-right")[0].setAttribute("style","display:block");
+      document.getElementsByClassName("demo-right")[1].setAttribute("style","display:none");
       for(var j=0;j<list.length; j++) {
         if(j==index) {
           list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
@@ -232,8 +230,8 @@ function showTopRight(index){
       }
       continue;
     }else if(index==3) {
-      show.setAttribute("style", "display:block;");
-      img.setAttribute("src", "./imgs/show-2.jpg");
+      document.getElementsByClassName("demo-right")[1].setAttribute("style","display:block");
+      document.getElementsByClassName("demo-right")[0].setAttribute("style","display:none");
       for(var j=0;j<list.length; j++) {
         if(j==index) {
           list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
@@ -242,8 +240,8 @@ function showTopRight(index){
         }
       }
     }else if(index==4) {
-      show.setAttribute("style", "display:block;");
-      img.setAttribute("src", "./imgs/show-1.jpg");
+      document.getElementsByClassName("demo-right")[0].setAttribute("style","display:block");
+      document.getElementsByClassName("demo-right")[1].setAttribute("style","display:none");
       for(var j=0;j<list.length; j++) {
         if(j==index) {
           list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
@@ -252,8 +250,8 @@ function showTopRight(index){
         }
       }
     }else if(index==5) {
-      show.setAttribute("style", "display:block;");
-      img.setAttribute("src", "./imgs/show-2.jpg");
+      document.getElementsByClassName("demo-right")[1].setAttribute("style","display:block");
+      document.getElementsByClassName("demo-right")[0].setAttribute("style","display:none");
       for(var j=0;j<list.length; j++) {
         if(j==index) {
           list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
@@ -262,8 +260,8 @@ function showTopRight(index){
         }
       }
     }else if(index==6) {
-      show.setAttribute("style", "display:block;");
-      img.setAttribute("src", "./imgs/show-1.jpg");
+      document.getElementsByClassName("demo-right")[0].setAttribute("style","display:block");
+      document.getElementsByClassName("demo-right")[1].setAttribute("style","display:none");
       for(var j=0;j<list.length; j++) {
         if(j==index) {
           list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
@@ -272,8 +270,8 @@ function showTopRight(index){
         }
       }
     }else if(index==7) {
-      show.setAttribute("style", "display:block;");
-      img.setAttribute("src", "./imgs/show-2.jpg");
+      document.getElementsByClassName("demo-right")[1].setAttribute("style","display:block");
+      document.getElementsByClassName("demo-right")[0].setAttribute("style","display:none");
       for(var j=0;j<list.length; j++) {
         if(j==index) {
           list[j].setAttribute("style","background-color:#fff;color:#ff6a00");
@@ -298,6 +296,7 @@ function hideTopRight() {
   document.getElementById("qweasd").setAttribute("style","color:#gray");
   
 }
+
 //显示导航
 function showqwe(index) {
   var list = document.getElementsByClassName("head-bottom-list-li");
@@ -466,4 +465,12 @@ function searchqwe() {
 var searchT = "请输入";
 function searchblur() {
   document.getElementById("seatch-text").innerHTML = searchT;
+}
+
+function searchShowHide(index) {
+  document.getElementsByClassName("demo-right-top")[index].innerHTML = "";
+}
+
+function searchShowShow(index) {
+  document.getElementsByClassName("demo-right-top")[index].innerHTML = "搜索云产品";
 }

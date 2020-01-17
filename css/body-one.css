@@ -114,13 +114,11 @@
 .top-right-one {
   width:700px;
   height:600px;
-  /* background-color: #ff6a00; */
 }
 
 .top-right-one-left{
   width:480px;
   height:600px;
-  /* background-color: aqua; */
   float: left;
 
 }
@@ -145,7 +143,6 @@
 .top-right-one-right {
   width:220px;
   height:600px;
-  /* background-color: blueviolet; */
   float: right;
 }
 
