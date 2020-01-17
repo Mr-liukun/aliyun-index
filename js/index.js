@@ -12,9 +12,7 @@ window.onload=function(){
 }
 
 function setTime(){
-  timer = window.setInterval("lunbo()",5000);
-
-
+  timer = window.setInterval("lunbo()",5000); //轮播图片的切换时间为5s
 }
 
 function lunbo() {
