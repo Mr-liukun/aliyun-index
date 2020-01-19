@@ -188,6 +188,7 @@
   color:#fff;
   border-bottom: 1px #fff solid;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .demo .demo-left .demo-left-list-first {

@@ -25,13 +25,22 @@ function lunbo() {
   }
   lun++;
   document.getElementById("lunbo").setAttribute("src",imgs[lun]);
+  if( lun == 1 ) {
+    document.getElementById("img-word").setAttribute("style","display:block");
+  }else if(lun == 3){
+    document.getElementById("img-word-one").setAttribute("style","display:block");
+  }else {
+    document.getElementById("img-word-one").setAttribute("style","display:none");
+    document.getElementById("img-word").setAttribute("style","display:none");
+  }
+
   var list = document.getElementsByClassName("lunbo-item");
   list[lun].setAttribute("style","background-color:#ff6a00");
   for(var i=0; i<list.length; i++) {
     if(i==lun){
       continue;
     }
-    list[i].setAttribute("style","background-color:#ceac86");
+    list[i].setAttribute("style","background-color:#f4f4f4");
   }
   if(lun>=3) {
     lun=-1;
@@ -43,12 +52,26 @@ function lunboclick(index) {
   qwe=0;
   document.getElementById("lunbo").setAttribute("src",imgs[index]);
   var list = document.getElementsByClassName("lunbo-item");
+  if( index == 1 ) {
+    document.getElementById("img-word").setAttribute("style","display:block");
+  }else if(index == 3){
+    document.getElementById("img-word-one").setAttribute("style","display:block");
+  }else {
+    document.getElementById("img-word-one").setAttribute("style","display:none");
+    document.getElementById("img-word").setAttribute("style","display:none");
+  }
+
+  if( index == 3) {
+    document.getElementById("img-word-one").setAttribute("style","display:block");
+  }else {
+    document.getElementById("img-word-one").setAttribute("style","display:none");
+  }
   
   for(var i = 0; i<list.length; i++){
     if(i==index){
       list[i].setAttribute("style","background-color:#ff6a00");
     }else{
-      list[i].setAttribute("style","background-color:#ceac86");
+      list[i].setAttribute("style","background-color:#f4f4f4");
     }
   }
   lun = index;
@@ -63,7 +86,7 @@ function lunboColorqwe(index){
 
 function lunboColorasd(index){
   if(index != lun){
-    document.getElementsByClassName("lunbo-item")[index].setAttribute("style","background-color:#ceac86");
+    document.getElementsByClassName("lunbo-item")[index].setAttribute("style","background-color:#f4f4f4");
   }
 }
 
