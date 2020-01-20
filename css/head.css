@@ -21,7 +21,7 @@
 .nav ul li {
   list-style: none;
   float:left;
-  width:60px;
+  width:55px;
   height:40px;
   font-size: 14px;
   color:#181818;
@@ -47,10 +47,11 @@
   position: absolute;
   top:40px;
   cursor:text;
-  padding: 7px 0  0 20px;
+  padding: 7px 0  0 35px;
   outline: none; /*去掉chrome浏览器自带的点击input框出现边框情况*/
   color: #999;
   font-size: 14px;
+  /* box-sizing: border-box; */
 }
 
 .top-search-text {
@@ -261,4 +262,49 @@
   padding-bottom: 10px;
   box-sizing: border-box;
   cursor: default !important;
+}
+
+.language-div{
+  width:70px;
+  height:23px;
+  position: absolute; 
+  top:4px;
+  left: 140px;
+  border: 1px solid rgb(231, 226, 226);
+  font-size: 12px;
+  padding: 3px 5px;
+  box-sizing: border-box;
+  color: #999;
+  font-weight: 600;
+}
+
+.language-div-child {
+  display: none;
+  width:400px;
+  height:300px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+  left:-1px;
+  top:21px;
+  font-size: 14px;
+  border: 1px solid rgb(231, 226, 226);
+  box-shadow: 0 0 1px rgb(187, 184, 184);
+}
+
+.language-div-child > table {
+  padding: 20px 0 0 10px;
+  cursor: default;
+}
+
+.language-div-child table tr td {
+  text-align: left;
+  width:15%;
+  color:#999;
+  font-weight: normal;
+} 
+
+.language-div-child table tr td:hover {
+
+  color:#fe6a00;
 }

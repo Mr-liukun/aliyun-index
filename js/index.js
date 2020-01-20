@@ -542,3 +542,13 @@ function fiveColor(index,item) {
 
   list[a].setAttribute("style", "color:#181818");
 }
+
+function languageShow() {
+  document.getElementById("dayuxiaoyu").innerHTML = "&gt;";
+  document.getElementById("language").setAttribute("style", "display:block");
+}
+
+function languageHide() {
+  document.getElementById("dayuxiaoyu").innerHTML = "&lt;";
+  document.getElementById("language").setAttribute("style", "display:none");
+}

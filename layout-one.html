@@ -27,20 +27,65 @@
 </head>
 
 <body>
-
-
   <!-- 头部 -->
   <div style="height:170px;box-shadow: 0px 0px 40px 0px #b9b4b4;">
-
-
-
     <div class="head">
       <div class="img-index">
         <img class="head-img" src="./imgs/aliyun.png">
+        <div class="language-div" onmouseenter="languageShow()" onmouseleave="languageHide()">
+          中国站<span id="dayuxiaoyu">&lt;</span>
+          <div class="language-div-child" id="language">
+            <table cellspacing="10">
+              <tr>
+                <td style="font-size: 14px;font-weight: bold;color: #181818;">中国站</td>
+                <td style="font-size: 14px;font-weight: bold;color: #181818;">Global</td>
+                <td style="font-size: 14px;font-weight: bold;color: #181818;">Country/Region</td>
+              </tr>
+              <tr>
+                <td>简体中文</td>
+                <td>English</td>
+                <td>Australia - English</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>简体中文</td>
+                <td>Malaysia - English</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>한국어</td>
+                <td>Singapore - English</td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td>繁體中文</td>
+                <td>United States - English</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Deutsch</td>
+                <td>中國香港 - 繁體中文</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Français</td>
+                <td>中國台灣 - 繁體中文</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>日本 - 日本語</td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+
       </div>
       <div class="nav">
         <ul>
-          <li>购物车</li>
+          <li><img src="./imgs/shopping.png" style="position: absolute;left:1151px;top:43px;"/>购物车</li>
           <li>文档</li>
           <li>备案</li>
           <li>控制台</li>
@@ -63,6 +108,7 @@
           <div id="seatch-text" onfocus="searchqwe()" onblur="searchblur()" contenteditable="true" style="margin: 0;text-align: left;" class="head-search">
             请输入
           </div>
+          <img src="./imgs/head-sea.png" style="position: absolute;top:48px;left:666px;" />
           <div
             style="position: absolute;left:1034px;top:40px;margin: 0;font-size: 14px;line-height: 35px;letter-spacing: 1px;color: #fff;width:70px;height: 36px;background-color: #ff6a00;cursor: pointer;">
             搜索</div>
