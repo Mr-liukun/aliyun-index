@@ -552,3 +552,15 @@ function languageHide() {
   document.getElementById("dayuxiaoyu").innerHTML = "&lt;";
   document.getElementById("language").setAttribute("style", "display:none");
 }
+
+function weixinshow(index) {
+  var list = document.getElementsByClassName("erweima");
+
+  list[index].setAttribute("style","display:block");
+}
+
+function weixinhide(index) {
+  var list = document.getElementsByClassName("erweima");
+
+  list[index].setAttribute("style","display:none");
+}
