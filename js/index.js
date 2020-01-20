@@ -414,8 +414,7 @@ function dataShow(index) {
   }   
 }
 
-function huan(index) {
-  var imgs = document.getElementsByClassName("imgs");
+function huanqwe(index) {
   var divs = document.getElementsByClassName("body-five-top-list");
 
   divs[index].setAttribute("style", " border-bottom: 2px solid #ff6a00;color:#ff6a00;");
@@ -425,37 +424,65 @@ function huan(index) {
     }
     divs[i].setAttribute("style", "border-bottom: 2px solid #ebebef;color:#000;");
   }
+  var qwes = document.getElementsByClassName("body-five-list");
   if(index == 0){  
-    for(var i=0; i<imgs.length; i++) {
-      imgs[i].setAttribute("src", "./imgs/one-"+i+".jpg");
+    for(var i = 0; i<qwes.length; i++) {
+      if(index == i){
+        qwes[index].setAttribute("style","display:block");
+        continue;
+      }
+      qwes[i].setAttribute("style","display:none");
     }
   }else if(index==1){
-    for(var i=0; i<imgs.length; i++) {
-      imgs[i].setAttribute("src", "./imgs/two-"+i+".jpg");
+    for(var i = 0; i<qwes.length; i++) {
+      if(index == i){
+        qwes[index].setAttribute("style","display:block");
+        continue;
+      }
+      qwes[i].setAttribute("style","display:none");
     }
   }else if(index==2){
-   
-    for(var i=0; i<imgs.length; i++) {
-      imgs[i].setAttribute("src", "./imgs/three-"+i+".jpg");
+    for(var i = 0; i<qwes.length; i++) {
+      if(index == i){
+        qwes[index].setAttribute("style","display:block");
+        continue;
+      }
+      qwes[i].setAttribute("style","display:none");
     }
+    
   }else if(index==3){
-  
-    for(var i=0; i<imgs.length; i++) {
-      imgs[i].setAttribute("src", "./imgs/four-"+i+".jpg");
+    for(var i = 0; i<qwes.length; i++) {
+      if(index == i){
+        qwes[index].setAttribute("style","display:block");
+        continue;
+      }
+      qwes[i].setAttribute("style","display:none");
     }
+    
   }else if(index==4){
-  
-    for(var i=0; i<imgs.length; i++) {
-      imgs[i].setAttribute("src", "./imgs/five-"+i+".jpg");
+    for(var i = 0; i<qwes.length; i++) {
+      if(index == i){
+        qwes[index].setAttribute("style","display:block");
+        continue;
+      }
+      qwes[i].setAttribute("style","display:none");
     }
+    
   }else if(index==5){
-  
-    for(var i=0; i<imgs.length; i++) {
-      imgs[i].setAttribute("src", "./imgs/six-"+i+".jpg");
-    }
+    for(var i = 0; i<qwes.length; i++) {
+      if(index == i){
+        qwes[index].setAttribute("style","display:block");
+        continue;
+      }
+      qwes[i].setAttribute("style","display:none");
+    }  
   }else if(index==6){
-    for(var i=0; i<imgs.length; i++) {
-      imgs[i].setAttribute("src", "./imgs/seven-"+i+".jpg");
+    for(var i = 0; i<qwes.length; i++) {
+      if(index == i){
+        qwes[index].setAttribute("style","display:block");
+        continue;
+      }
+      qwes[i].setAttribute("style","display:none");
     }
   }
 }
@@ -496,4 +523,22 @@ function searchShowHide(index) {
 
 function searchShowShow(index) {
   document.getElementsByClassName("demo-right-top")[index].innerHTML = "搜索云产品";
+}
+
+function fiveChangeColor(index,item) {
+
+  var list = document.getElementsByClassName("body-five-list-item-detail-ones");
+  
+  var a = index*4+item;
+
+  list[a].setAttribute("style", "color:#ff6a00");
+  
+}
+
+function fiveColor(index,item) {
+  var list = document.getElementsByClassName("body-five-list-item-detail-ones");
+  
+  var a = index*4+item;
+
+  list[a].setAttribute("style", "color:#181818");
 }
